@@ -15,4 +15,4 @@ class Solution(object):
             return (merged[n // 2 - 1] + merged[n // 2]) / 2.0  #if even, return average of two middle elements
 
 """ Time Complexity: O(n log n)
-Space Complexity: O(n)
+Space Complexity: O(n)"""
