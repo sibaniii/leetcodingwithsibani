@@ -10,15 +10,19 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 # THE CODE WHICH I WROTE
 class Solution(object):
     def removeDuplicates(self, nums):
-        k = len(nums)
-        i = 0
-        while i < len(nums):
-            j = i + 1
-            while j < len(nums):
-                if nums[i] == nums[j]:
-                    nums.pop(j)
-                    k -= 1
+        k = len(nums)                      #stores the initial length of the list in variable k
+        i = 0                              #pointer i starts at index 0
+        while i < len(nums):               #outer loop runs until the end of the modified nums list
+            j = i + 1                      #for each i, j starts from the next index
+            while j < len(nums):           #inner loop checks all elements after i
+                if nums[i] == nums[j]:     #if a duplicate is found
+                    nums.pop(j)            #remove the duplicate element
+                    k -= 1                 #decrease the count of unique elements
                 else:
-                    j += 1
-            i += 1
-        return k
+                    j += 1                 #only move j forward if no deletion (since deletion shifts elements)
+            i += 1                         #move to the next index in outer loop
+        return k                           #return count of unique elements
+
+"""Time Complexity: O(n³) in the worst case (when no duplicates) 
+-----------------> there are many better codes with better time complexity , this i wrote with whatever knowledge i had , might rewrite later.
+Space Complexity: O(1)
