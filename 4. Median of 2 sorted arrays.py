@@ -4,14 +4,15 @@ Example: Input: nums1 = [1,3], nums2 = [2]
 Output: 2.00000
 Explanation: merged array = [1,2,3] and median is 2."""
 
-
+# THE CODE WHICH I WROTE
 class Solution(object):
     def findMedianSortedArrays(self, nums1, nums2):
-        merged = sorted(nums1 + nums2)
-        n = len(merged)
-        if n % 2 == 1:
-            return merged[n // 2]
+        merged = sorted(nums1 + nums2)                          #merges both arrays and sorts them
+        n = len(merged)                                         #stores the total length of the merged array in variable n
+        if n % 2 == 1:                                          #checks if the length is odd
+            return merged[n // 2]                               #if odd, return the middle element
         else:
-            return (merged[n // 2 - 1] + merged[n // 2]) / 2.0
+            return (merged[n // 2 - 1] + merged[n // 2]) / 2.0  #if even, return average of two middle elements
 
-
+""" Time Complexity: O(n log n)
+Space Complexity: O(n)
