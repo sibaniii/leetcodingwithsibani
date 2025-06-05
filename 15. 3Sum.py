@@ -40,7 +40,8 @@ class Solution(object):
         return result                            #returns the final list of all unique triplets
 
 
-
+""" Time Complexity: O(n²)
+Space Complexity: O(k)"""
 
 
         
