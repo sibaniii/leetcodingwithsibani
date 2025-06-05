@@ -29,7 +29,7 @@ class Solution(object):
         return result                            #returns the final list of all unique triplets
 
 
-        return result
+
 
 
         
