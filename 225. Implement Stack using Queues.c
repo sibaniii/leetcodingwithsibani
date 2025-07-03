@@ -1,3 +1,4 @@
+//i just used the normal basic concept of queues and created 2 queues as req by the ques.
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
