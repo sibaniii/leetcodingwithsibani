@@ -1,3 +1,4 @@
+//i just used the normal basic concept of stacks and created 2 stacks as req by the ques.
 #include <stdlib.h>
 #include <stdbool.h>
 
