@@ -15,4 +15,4 @@ class Solution(object):
         
         return max_len                 # return the length of the longest substring without repeating chars
 
-
+# time complexiety: O(n2)
